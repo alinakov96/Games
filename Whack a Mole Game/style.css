@@ -1,8 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+
+.info {
+  padding-top: 1rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  background-color: darkgreen;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: darkgreen;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+}
+
+.stats .score,
+.stats .time {
+  margin: 1rem;
+}
+
+#score {
+  color: greenyellow;
+}
+
+#time-left {
+  color: lime;
+}
+
 .square {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-style: solid;
-  border-color: black;
+  border-color: whitesmoke;
 }
 
 .grid {
@@ -17,4 +70,9 @@
 .mole {
   background-image: url("mole.jpg");
   background-size: cover;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
 }

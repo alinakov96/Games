@@ -36,15 +36,15 @@ function moveMole() {
 
 moveMole();
 
-function CountDown() {
+function countDown() {
   currentTime--;
   timeLeft.textContent = currentTime;
 
   if (currentTime === 0) {
-    clearInterval(CountDownTimerId);
+    clearInterval(countDownTimerId);
     clearInterval(timerId);
-    alert("GAME OVER! Your final score is" + result);
+    alert("GAME OVER! Your final score is " + result);
   }
 }
 
-letTimerId = setInterval(CountDown, 1000);
+let countDownTimerId = setInterval(countDown, 1000);
