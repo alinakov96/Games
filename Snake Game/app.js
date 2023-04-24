@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     squares[appleIndex].classList.remove("apple");
     clearInterval(interval);
     score = 0;
-    //randomApple()
+    randomApple();
     direction = 1;
     scoreDisplay.innerText = score;
     intervalTime = 1000;

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //move the shooter along a line
   function moveShooter(e) {
-    squares[currentShooterIndex], classList.remove("shooter");
+    squares[currentShooterIndex].classList.remove("shooter");
     switch (e.keyCode) {
       case 37:
         if (currentShooterIndex % width !== 0) currentShooterIndex -= 1;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentShooterIndex % width < width - 1) currentShooterIndex += 1;
         break;
     }
-    squares[currentShooterIndex], classList.add("shooter");
+    squares[currentShooterIndex].classList.add("shooter");
   }
   document.addEventListener("keydown", moveShooter);
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //decide a win
     if (alienInvadersTakenDown.length === alienInvaders.length) {
-      resultDisplay.textContent = "You Win";
+      resultDisplay.textContent = "You Win!";
       clearInterval(invaderId);
     }
   }
@@ -120,12 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
         );
       }
     }
-
-    //     document.addEventListener("keyup", (e) => {
-    //       if (e.keyCode === 32) {
-    //         laserId = setInterval(moveLaser, 100);
-    //       }
-    //     });
 
     switch (e.keyCode) {
       case 32:
